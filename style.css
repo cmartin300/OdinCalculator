@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgb(0, 153, 204), rgb(204, 255, 255));
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+}
+
+main {
+    border: 2px solid white;
+    max-width: 15em;
+    margin: 100px auto;
+    padding: 15px;
+}
+
+header {
+    padding-top: 15px;
+}
+
+.display {
+    border: 1px solid black;
+    margin: 10px;
+    margin-bottom: 2em;
+    text-align: right;
+    padding: 10px;
+    font-size: larger;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: .25em;
+}
+
+.equals {
+    grid-row: 5;
+    grid-column: 3/5;
+}
+
+.operator {
+    grid-column: 4;
+}
+
+.clear {
+    grid-row: 5;
+    grid-column: 1/3;
+}
+
+.zero {
+    grid-column: 1/3;
+}
